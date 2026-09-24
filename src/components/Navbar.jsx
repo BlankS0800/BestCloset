@@ -14,13 +14,13 @@ export default function Navbar({
     <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-[#09090d]/90 border-b border-white/10 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo Oficial Best Closet */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="relative overflow-hidden rounded-xl border border-white/15 bg-black p-1 shadow-lg hover:border-[#ff2a85] transition-colors">
-              <img 
-                src="/best-closet-logo.jpg" 
-                alt="Best Closet Logo" 
+              <img
+                src="src\assets\best-closet-logo.jpg"
+                alt="Best Closet Logo"
                 className="h-10 w-auto object-contain"
               />
             </div>
@@ -33,21 +33,21 @@ export default function Navbar({
 
           {/* Navegación Desktop */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-            <button 
-              onClick={() => onScrollToSection('catalog')} 
+            <button
+              onClick={() => onScrollToSection('catalog')}
               className="hover:text-white transition-colors cursor-pointer"
             >
               Catálogo
             </button>
-            <button 
-              onClick={onOpenStylist} 
+            <button
+              onClick={onOpenStylist}
               className="hover:text-white transition-colors cursor-pointer flex items-center gap-1.5"
             >
               <Sparkles className="w-4 h-4 text-[#ff8a00]" />
               AI Stylist
             </button>
-            <button 
-              onClick={onOpenSellModal} 
+            <button
+              onClick={onOpenSellModal}
               className="hover:text-white transition-colors cursor-pointer"
             >
               Vender Prenda
@@ -56,7 +56,7 @@ export default function Navbar({
 
           {/* Acciones principales */}
           <div className="flex items-center gap-3">
-            
+
             {/* Botón Destacado AI Stylist */}
             <button
               onClick={onOpenStylist}
