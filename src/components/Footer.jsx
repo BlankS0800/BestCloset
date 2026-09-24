@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
+import logoImg from '../assets/best-closet-logo.jpg';
 
 export default function Footer({ onOpenStylist }) {
   return (
@@ -13,7 +14,7 @@ export default function Footer({ onOpenStylist }) {
             <div className="flex items-center gap-3">
               <div className="p-1 rounded-xl bg-black border border-white/15">
                 <img 
-                  src="/best-closet-logo.jpg" 
+                  src={logoImg} 
                   alt="Best Closet" 
                   className="h-9 w-auto object-contain"
                 />
