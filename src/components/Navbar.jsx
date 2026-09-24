@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, ShoppingBag, PlusCircle, Menu, X } from 'lucide-react';
+import logoImg from '../assets/best-closet-logo.jpg';
 
 export default function Navbar({
   cartCount,
@@ -19,7 +20,7 @@ export default function Navbar({
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="relative overflow-hidden rounded-xl border border-white/15 bg-black p-1 shadow-lg hover:border-[#ff2a85] transition-colors">
               <img
-                src="src\assets\best-closet-logo.jpg"
+                src={logoImg}
                 alt="Best Closet Logo"
                 className="h-10 w-auto object-contain"
               />
