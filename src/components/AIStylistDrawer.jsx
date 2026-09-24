@@ -37,7 +37,7 @@ export default function AIStylistDrawer({
   const chatBottomRef = useRef(null);
 
   const hasApiKey = Boolean(getStoredApiKey());
-
+  console.log("Key:", import.meta.env.VITE_API_KEY)
   // Si se abre el drawer con un producto específico consultado desde el catálogo
   useEffect(() => {
     if (initialQueryProduct && isOpen) {
@@ -58,7 +58,7 @@ export default function AIStylistDrawer({
   const handleImageUpload = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
-
+  
     try {
       setIsProcessingImage(true);
       // Redimensiona y comprime en el navegador a max 512px para respuesta instantánea (<30KB)
