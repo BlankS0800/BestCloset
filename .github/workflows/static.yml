@@ -37,7 +37,11 @@ jobs:
 
       - name: Build with Vite
         run: npm run build
-
+        
+      - name: Build project
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+        run: npm run build
       # 3. Configurar y desplegar en GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -46,6 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist' # Carpeta de salida por defecto de Vite
+      
 
       - name: Deploy to GitHub Pages
         id: deployment
