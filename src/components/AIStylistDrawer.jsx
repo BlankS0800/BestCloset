@@ -37,7 +37,7 @@ export default function AIStylistDrawer({
   const chatBottomRef = useRef(null);
 
   const hasApiKey = Boolean(getStoredApiKey());
-  console.log("Key:", import.meta.env.VITE_API_KEY)
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
   // Si se abre el drawer con un producto específico consultado desde el catálogo
   useEffect(() => {
     if (initialQueryProduct && isOpen) {
