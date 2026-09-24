@@ -31,26 +31,24 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      # 2. Instalar dependencias y compilar Vite
+      # 2. Instalar dependencias
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Vite
-        run: npm run build
-        
+      # 3. Compilar Vite con la API Key
       - name: Build project
         env:
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
         run: npm run build
-      # 3. Configurar y desplegar en GitHub Pages
+
+      # 4. Configurar y desplegar en GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Carpeta de salida por defecto de Vite
-      
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
