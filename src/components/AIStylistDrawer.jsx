@@ -25,10 +25,10 @@ export default function AIStylistDrawer({
   const [paymentMethod, setPaymentMethod] = useState('qr'); // 'qr' o 'card'
 
   // Datos del formulario de tarjeta
-  const [cardNumber, setCardNumber] = useState('4532 8921 7734 5091');
-  const [cardHolder, setCardHolder] = useState('HERNAN CONDORI');
-  const [cardExpiry, setCardExpiry] = useState('08/28');
-  const [cardCvv, setCardCvv] = useState('834');
+  const [cardNumber, setCardNumber] = useState('');
+  const [cardHolder, setCardHolder] = useState('');
+  const [cardExpiry, setCardExpiry] = useState('');
+  const [cardCvv, setCardCvv] = useState('');
 
   const [messages, setMessages] = useState([
     {
@@ -106,7 +106,7 @@ export default function AIStylistDrawer({
   const handleImageUpload = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
-  
+
     try {
       setIsProcessingImage(true);
       // Redimensiona y comprime en el navegador a max 512px para respuesta instantánea (<30KB)
@@ -252,7 +252,7 @@ export default function AIStylistDrawer({
         {/* CONTENIDO: BLOQUEO / PAGO O CHAT ACTIVO */}
         {!isUnlocked ? (
           <div className="flex-1 overflow-y-auto p-4 sm:p-6 flex flex-col justify-center items-center">
-            
+
             {/* VISTA 1: PANTALLA DE BLOQUEO (SE REQUIEREN 25 BS) */}
             {payStep === 'paywall' && (
               <div className="w-full max-w-md bg-[#131320] border border-white/10 rounded-3xl p-6 sm:p-8 text-center space-y-6 shadow-2xl relative overflow-hidden">
@@ -322,7 +322,7 @@ export default function AIStylistDrawer({
             {/* VISTA 2: OPCIONES DE PAGO (TARJETAS Y QR) */}
             {payStep === 'select_payment' && (
               <div className="w-full max-w-md bg-[#131320] border border-white/10 rounded-3xl p-5 sm:p-7 space-y-5 shadow-2xl animate-fadeIn">
-                
+
                 {/* Cabecera de pago */}
                 <div className="flex items-center justify-between border-b border-white/10 pb-3">
                   <button
@@ -347,22 +347,20 @@ export default function AIStylistDrawer({
                 <div className="grid grid-cols-2 gap-2 p-1 bg-black/40 rounded-2xl border border-white/10">
                   <button
                     onClick={() => setPaymentMethod('qr')}
-                    className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-                      paymentMethod === 'qr'
-                        ? 'bg-bc-gradient text-white shadow-md'
-                        : 'text-gray-400 hover:text-white'
-                    }`}
+                    className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${paymentMethod === 'qr'
+                      ? 'bg-bc-gradient text-white shadow-md'
+                      : 'text-gray-400 hover:text-white'
+                      }`}
                   >
                     <QrCode className="w-4 h-4" />
                     <span>Pago con QR</span>
                   </button>
                   <button
                     onClick={() => setPaymentMethod('card')}
-                    className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-                      paymentMethod === 'card'
-                        ? 'bg-bc-gradient text-white shadow-md'
-                        : 'text-gray-400 hover:text-white'
-                    }`}
+                    className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${paymentMethod === 'card'
+                      ? 'bg-bc-gradient text-white shadow-md'
+                      : 'text-gray-400 hover:text-white'
+                      }`}
                   >
                     <CreditCard className="w-4 h-4" />
                     <span>Tarjetas</span>
@@ -375,7 +373,7 @@ export default function AIStylistDrawer({
                     <div className="bg-white p-3.5 rounded-2xl inline-block shadow-lg mx-auto">
                       <svg viewBox="0 0 160 160" className="w-44 h-44 mx-auto">
                         <rect width="160" height="160" fill="#ffffff" rx="8" />
-                        
+
                         {/* Finder Patterns */}
                         <rect x="12" y="12" width="40" height="40" rx="4" fill="#0f0f18" />
                         <rect x="18" y="18" width="28" height="28" rx="2" fill="#ffffff" />
@@ -408,7 +406,7 @@ export default function AIStylistDrawer({
                           <rect x="60" y="14" width="6" height="6" rx="1" />
                           <rect x="74" y="14" width="6" height="6" rx="1" />
                           <rect x="88" y="14" width="6" height="6" rx="1" />
-                          
+
                           <rect x="42" y="60" width="6" height="6" rx="1" />
                           <rect x="54" y="60" width="6" height="6" rx="1" />
                           <rect x="70" y="60" width="6" height="6" rx="1" />
@@ -505,7 +503,7 @@ export default function AIStylistDrawer({
                           type="text"
                           value={cardHolder}
                           onChange={(e) => setCardHolder(e.target.value)}
-                          placeholder="HERNAN CONDORI"
+                          placeholder="MANUEL MEDINA"
                           className="w-full px-3 py-2 rounded-xl bg-white/5 border border-white/15 text-white placeholder-gray-500 focus:outline-none focus:border-[#ff2a85]"
                         />
                       </div>
