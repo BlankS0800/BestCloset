@@ -1,0 +1,545 @@
+[
+  {
+    "id": "bc-01",
+    "title": "Camisa Oversize de Lino Puro Italiano",
+    "category": "Camisas & Tops",
+    "desc": "Camisa relajada en lino italiano prelavado de alta densidad. Suave al tacto, transpirable y con una caída impecable para climas templados o cálidos.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-02",
+    "title": "Blazer Sastrado Minimalista en Lana Merino",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Estructura semidesestructurada en fina lana merino virgen. Líneas limpias y silueta recta contemporánea que eleva cualquier outfit diario o formal.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-03",
+    "title": "Hoodie Boxy Fit Heavyweight Streetwear",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Sudadera pesada de 480 GSM en algodón peruano pima peinado. Silueta boxy moderna sin cordones con hombros caídos y capucha envolvente.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-04",
+    "title": "Pantalón Wide Leg Denim Selvedge Japonés",
+    "category": "Pantalones & Jeans",
+    "desc": "Denim japonés selvedge con orillo rojo de 14oz. Lavado suave que resalta la textura irregular del hilo. Corte amplio moderno con caída pesada.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-05",
+    "title": "Vestido Slip Dress de Seda Natural Mulberry",
+    "category": "Vestidos & Faldas",
+    "desc": "Vestido al bies confeccionado en 100% seda Mulberry de 19 momme. Brillo sutil y ajuste fluido que se adapta a la silueta con tirantes regulables.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-06",
+    "title": "Chaqueta Biker de Cuero Vegano Estructurado",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Chaqueta estilo motera con detalles metálicos envejecidos, forro interior satinado y silueta cropped noventera en eco-cuero de alta durabilidad.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1520975954732-35dd22299614?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-07",
+    "title": "Cardigan Chunky Tejido en Lana Merino y Alpaca",
+    "category": "Knitwear & Suéteres",
+    "desc": "Cardigan de punto grueso trenzado con botones de cuerno natural. Calidez superior, fibra no irritante y estilo atemporal fácil de superponer.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-08",
+    "title": "Pantalón Pleated Chino en Lino y Algodón",
+    "category": "Pantalones & Jeans",
+    "desc": "Pantalón de pinzas con cintura limpia y tiro medio-alto. Mezcla prémium de lino y algodón orgánico que resiste arrugas manteniendo frescura total.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-09",
+    "title": "Camiseta Básica Heavyweight Algodón Pima 280g",
+    "category": "Camisas & Tops",
+    "desc": "El básico definitivo: cuello acanalado reforzado de 2.5cm que no se deforma tras los lavados, algodón pima de fibra extralarga y caída impecable.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-10",
+    "title": "Set Deportivo Seamless de Top y Calza Moldeadora",
+    "category": "Ropa Deportiva & Activewear",
+    "desc": "Conjunto deportivo confeccionado en punto tubular seamless sin costuras laterales. Efecto moldeador, soporte medio-alto y absorción antibacteriana.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-11",
+    "title": "Chaqueta Cortavientos Ultraligera con Reflectivos",
+    "category": "Ropa Deportiva & Activewear",
+    "desc": "Cortavientos técnico de 90g con tratamiento DWR repelente al agua. Plegable en su propio bolsillo con microperforaciones de ventilación en axilas y espalda.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-12",
+    "title": "Leggings Compresivos Térmicos de Alto Rendimiento",
+    "category": "Ropa Deportiva & Activewear",
+    "desc": "Pantalón deportivo con compresión graduada y forro interior microtérmico. Bolsillo lateral para smartphone y cintura reforzada antideslizamiento.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-13",
+    "title": "Zapatillas Running Pro Cushioning Placa de Carbono",
+    "category": "Calzado & Accesorios",
+    "desc": "Zapatillas de maratón con entresuela de espuma reactiva supercritical y placa integral de fibra de carbono para máximo retorno de energía.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-14",
+    "title": "Sudadera Técnica Half-Zip Transpirable",
+    "category": "Ropa Deportiva & Activewear",
+    "desc": "Prenda intermedia térmica con cremallera YKK invertida hasta el pecho y orificios para pulgares en los puños. Secado rápido y textura aterciopelada interior.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-15",
+    "title": "Shorts 2-en-1 de Entrenamiento con Malla Interior",
+    "category": "Ropa Deportiva & Activewear",
+    "desc": "Pantalón corto de 5 pulgadas con malla de compresión integrada que previene rozaduras. Cintura elástica con cordón interior y bolsillo impermeable para llaves.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-16",
+    "title": "Top Deportivo Alto Impacto Cruzado en Espalda",
+    "category": "Ropa Deportiva & Activewear",
+    "desc": "Sujetador deportivo estructurado con copas extraíbles y tirantes multidireccionales que distribuyen el peso equitativamente en trapecios y hombros.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-17",
+    "title": "Mochila Técnica Impermeable Roll-Top 25L",
+    "category": "Calzado & Accesorios",
+    "desc": "Mochila de cierre enrollable con sellado hermético por alta frecuencia. Compartimento acolchado para laptop de 16\" y correas ergonómicas transpirables.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-18",
+    "title": "Bañador Entero Asimétrico Escote Cut-Out",
+    "category": "Trajes de Baño & Playa",
+    "desc": "Traje de baño de una pieza con diseño asimétrico de un solo hombro y abertura lateral arquitectónica. Tejido italiano Econyl con protección solar UPF 50+.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-19",
+    "title": "Bikini Retro Tiro Alto con Top Halter de Aros",
+    "category": "Trajes de Baño & Playa",
+    "desc": "Conjunto bikini de dos piezas con braguita de cintura ultra alta moldeadora y top con aros ocultos que realzan el escote de forma natural.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1582639510494-c80b5de9f148?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-20",
+    "title": "Bermuda de Baño de Secado Rápido Print Botánico",
+    "category": "Trajes de Baño & Playa",
+    "desc": "Bañador masculino de corte medio (6\") en microfibra hidrofóbica con tacto piel de melocotón. Forro interior de malla elástica suave y cordón con terminales grabados.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-21",
+    "title": "Vestido Kimono Salida de Playa en Lino y Encaje Crochet",
+    "category": "Vestidos & Faldas",
+    "desc": "Kaftán abierto largo en lino puro con inserciones artesanales de crochet en mangas y dobladillo. Acompaña el movimiento con ligereza y sofisticación marina.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-22",
+    "title": "Camisa Resort Cuello Campamento en Seda y Viscosa",
+    "category": "Camisas & Tops",
+    "desc": "Camisa relajada con cuello abierto estilo cubano. Mezcla liviana de seda y viscosa con caída suntuosa y tacto frío ideal para veladas al atardecer.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-23",
+    "title": "Sombrero Fedora Artesanal en Paja Toquilla Fina Grado 8",
+    "category": "Calzado & Accesorios",
+    "desc": "Genuino sombrero de paja toquilla tejido a mano por maestros artesanos. Ala media de 6.5cm, badana interior de piel suave y cinta grosgrain negra.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-24",
+    "title": "Traje Dos Piezas Cruzado Slim Fit en Lana Fría 130s",
+    "category": "Trajes & Sastrería",
+    "desc": "Conjunto de chaqueta cruzada 6x2 con solapa en pico amplia y pantalón con pretina corrida y ajustadores laterales metálicos. Confección artesanal entera.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-25",
+    "title": "Blazer Smoking de Terciopelo de Seda con Solapa de Raso",
+    "category": "Trajes & Sastrería",
+    "desc": "Chaqueta de esmoquin en terciopelo de seda alemán con brillo profundo y solapa redonda shawl en raso de seda negra. Cierre con botón forrado.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-26",
+    "title": "Pantalón Sastre de Pinzas Dobles en Lana Virgen",
+    "category": "Pantalones & Jeans",
+    "desc": "Pantalón clásico de corte sastre italiano con pinzas invertidas profundas, dobladillo vuelto de 4cm y bolsillos de ojal traseros.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-27",
+    "title": "Smoking Clásico Black Tie Solapa en Pico y Raso",
+    "category": "Trajes & Sastrería",
+    "desc": "El traje de etiqueta definitivo: lana fría Super 140s de Loro Piana, solapas en pico recubiertas en grogrén de seda y galón lateral a juego en pantalón.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-28",
+    "title": "Camisa Formal Cuello Francés en Algodón Egipcio Giza 87",
+    "category": "Camisas & Tops",
+    "desc": "Camisa de vestir de dos cabos (120/2) tejida en hilado de algodón egipcio de fibra extralarga. Botones de nácar australiano cosidos con pata de gallo.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-29",
+    "title": "Chaleco Sastre de Lana y Seda Ajustable Cuatro Botones",
+    "category": "Trajes & Sastrería",
+    "desc": "Chaleco sastre entallado con espalda en satén transpirable y trabilla de ajuste con hebilla metálica. Aporta estructura a cualquier traje de dos o tres piezas.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-30",
+    "title": "Falda Lápiz Midi Sastrada con Abertura Posterior",
+    "category": "Vestidos & Faldas",
+    "desc": "Falda de oficina en crepé de lana italiana de estructura firme. Cintura alta definida, forro de cupro sedoso y abertura trasera para libertad de paso.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-31",
+    "title": "Zapatos Oxford Cap-Toe Piel Flor con Cosido Goodyear",
+    "category": "Calzado & Accesorios",
+    "desc": "Zapatos de vestir Oxford hechos a mano en piel de becerro francesa plena flor. Construcción Goodyear Welt que garantiza décadas de durabilidad y fácil resolado.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-32",
+    "title": "Vestido de Gala Largo en Satén con Espalda Descubierta",
+    "category": "Vestidos & Faldas",
+    "desc": "Vestido de alfombra roja cortado al bies en satén duquesa de peso sustancial. Caída escultural líquida, tirantes ultrafinos cruzados y discreta cola posterior.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-33",
+    "title": "Vestido Midi Cocktail con Lentejuelas Degradé Champagne",
+    "category": "Vestidos & Faldas",
+    "desc": "Vestido de noche confeccionado en malla elástica bordada con micro-lentejuelas mates que capturan la luz de manera sofisticada sin deslumbrar.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-34",
+    "title": "Jumpsuit Halterneck Fluido con Abertura Frontal",
+    "category": "Vestidos & Faldas",
+    "desc": "Mono entero de fiesta en crepé fluido de alta caída con escote halter cruzado al cuello y pantalón palazzo de pierna ultra ancha que simula un vestido en reposo.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-35",
+    "title": "Top Corsetero Estructurado en Raso con Ballenas Flexibles",
+    "category": "Camisas & Tops",
+    "desc": "Corsé moderno con escote corazón marcado y costuras con varillas flexibles que ciñen la cintura cómodamente. Cierre de cremallera metálica trasera.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-36",
+    "title": "Sandalias de Tacón Alto con Tiras Finas Metalizadas",
+    "category": "Calzado & Accesorios",
+    "desc": "Sandalias minimalistas con tiras tubulares de 3mm en piel metalizada flexible. Tacón aguja de 9cm equilibrado con almohadilla de gel en metatarso.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-37",
+    "title": "Clutch Rígido de Fiesta con Cierre Joya y Cadena Oculta",
+    "category": "Calzado & Accesorios",
+    "desc": "Bolso de mano estilo minaudière forrado en raso de seda con herrajes dorados pulidos. Incluye cadena fina para llevar al hombro o esconder al interior.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-38",
+    "title": "Falda Maxi Plisada Soleil en Tejido Tornasol",
+    "category": "Vestidos & Faldas",
+    "desc": "Falda larga con plisado permanente en acordeón que abre en vuelo amplio tipo soleil al caminar. Cinturilla elástica con brillo satinado sutil.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-39",
+    "title": "Capa Corta de Noche en Mezcla de Lana y Seda",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Prenda exterior de fiesta que abriga hombros y escotes sin arrugar mangas. Cuello alto envolvente y cierre con broche joya metálico envejecido.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-40",
+    "title": "Pantalón Cargo Táctico Utility con Bolsillos 3D",
+    "category": "Pantalones & Jeans",
+    "desc": "Pantalón cargo en sarga de algodón pesada con 8 bolsillos funcionales, tiradores ajustables con tanca en los tobillos y refuerzo en rodillas.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-41",
+    "title": "Campera Bomber Reversible MA-1 Oversize",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Cazadora bomber clásica de corte holgado en nailon brillante hidrófugo con forro interior naranja de rescate. Cremallera metálica bidireccional gruesa.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1544441893-675973e31985?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-42",
+    "title": "Camiseta Gráfica Oversize Heavy Cotton 300g",
+    "category": "Camisas & Tops",
+    "desc": "Remera de corte cuadrado en algodón peinado con lavado ácido vintage y estampado serigráfico de alta densidad en espalda y pecho.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-43",
+    "title": "Jeans Straight Fit Tiro Medio Lavado Vintage 90s",
+    "category": "Pantalones & Jeans",
+    "desc": "Pantalón vaquero 100% algodón sin elastano que mantiene su forma estructurada. Bigotes naturales y remaches de cobre genuino.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-44",
+    "title": "Sobrecamisa de Pana Gruesa Oversize con Bolsillos",
+    "category": "Camisas & Tops",
+    "desc": "Camisa pesada en pana de 8 canutillos de algodón suave. Ideal como chaqueta ligera en entretiempo sobre camisetas o suéteres finos.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-45",
+    "title": "Sneakers Chunky Retro de Cuero y Gamuza Natural",
+    "category": "Calzado & Accesorios",
+    "desc": "Zapatillas urbanas de inspiración noventera combinando paneles de piel vacuna y serraje suave. Suela de goma vulcanizada con gran tracción y comodidad.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-46",
+    "title": "Gorra Dad Cap Bordada en Sarga de Algodón Lavado",
+    "category": "Calzado & Accesorios",
+    "desc": "Gorra desestructurada de 6 paneles con visera curvada y cierre trasero metálico con hebilla grabada. Acabado lavado que añade carácter instantáneo.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-47",
+    "title": "Bolso Cruzado Crossbody de Nylon Ripstop y Cordura",
+    "category": "Calzado & Accesorios",
+    "desc": "Riñonera / bolso cruzado resistente a rasgaduras con cremalleras estancas YKK y correa de cinta militar regulable con hebilla rápida de liberación.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-48",
+    "title": "Polo Rugby Oversize a Rayas con Cuello de Lona",
+    "category": "Camisas & Tops",
+    "desc": "Chomba polo pesada de 320 GSM en jersey grueso con botones de goma ocultos tradicionales y cuello en drill de algodón blanco contrastante.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-49",
+    "title": "Chaleco Acolchado Puffer Sin Mangas Relleno Térmico",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Chaleco acolchado con micro-cámaras horizontales de aislamiento térmico ecológico. Cuello subido con protector de barbilla y bolsillos térmicos para manos.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1544441893-675973e31985?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-50",
+    "title": "Trench Coat Clásico Doble Botonadura en Gabardina Impermeable",
+    "category": "Chaquetas & Abrigos",
+    "desc": "La gabardina icónica: solapas con protector de lluvia, charreteras en hombros, cinturón con anillas D metálicas y forro tartán clásico.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-51",
+    "title": "Jersey Cuello Cisne de Cashmere Mongol 100% Puro",
+    "category": "Knitwear & Suéteres",
+    "desc": "Suéter de cuello alto elaborado con la capa más fina del cashmere de Mongolia (grosor 15.5 micras). Suavidad insuperable sobre la piel sin picazón.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-52",
+    "title": "Kimono Samurai Contemporáneo en Lino Pesado Prelavado",
+    "category": "Chaquetas & Abrigos",
+    "desc": "Chaqueta cruzada de inspiración oriental tipo Haori con mangas anchas y cinturón lazo extraíble. Lino de 380 GSM con teñido botánico artesanal.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-53",
+    "title": "Falda Maxi Bohemio Escalonada con Estampado Paisley",
+    "category": "Vestidos & Faldas",
+    "desc": "Falda con volantes en caída escalonada confeccionada en seda liviana. Estampado de cachemira en tonos cálidos y cintura con nido de abeja elástico.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-54",
+    "title": "Poncho Manta en Baby Alpaca y Lana Merino con Flecos",
+    "category": "Knitwear & Suéteres",
+    "desc": "Capa envolvente tejida en telar tradicional con hilado de primera esquila de alpaca. Abrigo ligero como una pluma y flecos rematados a mano.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-55",
+    "title": "Bolso Tote Bag de Cuero Vacuno Curtido al Vegetal",
+    "category": "Calzado & Accesorios",
+    "desc": "Bolso de estructura limpia en cuero italiano de 2.2mm sin forro artificial, que desarrollará una pátina única con el uso. Asas reforzadas con remaches.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-56",
+    "title": "Botines Chelsea Suela Track de Cuero Encerado",
+    "category": "Calzado & Accesorios",
+    "desc": "Botas estilo Chelsea con elásticos laterales anchos y suela de goma dentada extrusionada de 4.5cm. Piel hidrofugada resistente al barro y lluvia.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1520975954732-35dd22299614?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-57",
+    "title": "Gafas de Sol Cuadradas en Acetato Italiano Mazzucchelli",
+    "category": "Calzado & Accesorios",
+    "desc": "Montura gruesa pulida a mano con bisagras de 5 dientes en acero inoxidable y lentes polarizadas Carl Zeiss categoría 3 con 100% protección UV.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-58",
+    "title": "Blusa Romántica con Mangas Abullonadas y Cuello Victoriano",
+    "category": "Camisas & Tops",
+    "desc": "Blusa femenina en batista de algodón de tacto sedoso con pliegues en pechera, pequeños botones forrados y puños elásticos fruncidos.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    "id": "bc-59",
+    "title": "Cinturón Ancho de Cuero con Hebilla Escultural en Latón",
+    "category": "Calzado & Accesorios",
+    "desc": "Cinturón de 4cm de ancho en cuero vacuno plena flor con hebilla de fundición artística en latón macizo cepillado mate. Enmarca la cintura en vestidos o blazers.",
+    "imgs": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&auto=format&fit=crop&q=80"
+    ]
+  }
+]

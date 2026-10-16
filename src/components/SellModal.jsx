@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import { X, PlusCircle } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { X, PlusCircle, Upload, Trash2, Camera, CheckCircle2, AlertCircle, Link2 } from 'lucide-react';
 import { CATEGORIES, STYLES, MATERIALS } from '../data/mockProducts';
+
+const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&auto=format&fit=crop&q=80';
 
 export default function SellModal({ isOpen, onClose, onAddProduct }) {
   const [title, setTitle] = useState('');
@@ -12,13 +14,123 @@ export default function SellModal({ isOpen, onClose, onAddProduct }) {
   const [condition, setCondition] = useState('Nuevo con etiqueta');
   const [price, setPrice] = useState(80);
   const [description, setDescription] = useState('');
-  const [imagePreview, setImagePreview] = useState('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&auto=format&fit=crop&q=80');
+
+  // Estados de Imagen
+  const [imagePreview, setImagePreview] = useState('');
+  const [fileName, setFileName] = useState('');
+  const [isDragging, setIsDragging] = useState(false);
+  const [uploadError, setUploadError] = useState('');
+  const [useUrlInput, setUseUrlInput] = useState(false);
+  const [imageUrl, setImageUrl] = useState('');
+  const fileInputRef = useRef(null);
 
   if (!isOpen) return null;
+
+  const handleFileProcess = (file) => {
+    setUploadError('');
+    if (!file) return;
+
+    if (!file.type.startsWith('image/')) {
+      setUploadError('Por favor selecciona un archivo de imagen válido (JPG, PNG, WebP).');
+      return;
+    }
+
+    // 10 MB límite
+    if (file.size > 10 * 1024 * 1024) {
+      setUploadError('La imagen es demasiado pesada. El tamaño máximo permitido es 10MB.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      setImagePreview(event.target.result);
+      setFileName(file.name);
+      setUploadError('');
+    };
+    reader.onerror = () => {
+      setUploadError('Ocurrió un error al leer la imagen.');
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleFileInputChange = (e) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      handleFileProcess(file);
+    }
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(false);
+
+    const file = e.dataTransfer.files?.[0];
+    if (file) {
+      handleFileProcess(file);
+    }
+  };
+
+  const handleRemoveImage = () => {
+    setImagePreview('');
+    setFileName('');
+    setImageUrl('');
+    setUploadError('');
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleApplyUrl = (e) => {
+    e.preventDefault();
+    if (!imageUrl.trim()) return;
+    setImagePreview(imageUrl.trim());
+    setFileName('Imagen por URL');
+    setUploadError('');
+  };
+
+  const resetForm = () => {
+    setTitle('');
+    setBrand('');
+    setCategory(CATEGORIES[1]);
+    setStyle(STYLES[1]);
+    setMaterial(MATERIALS[1]);
+    setSize('M');
+    setCondition('Nuevo con etiqueta');
+    setPrice(80);
+    setDescription('');
+    setImagePreview('');
+    setFileName('');
+    setImageUrl('');
+    setUploadError('');
+    setUseUrlInput(false);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleClose = () => {
+    resetForm();
+    onClose();
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim() || price <= 0) return;
+
+    const finalImage = imagePreview || DEFAULT_IMAGE;
 
     const newProduct = {
       id: 'bc-seller-' + Date.now(),
@@ -40,7 +152,7 @@ export default function SellModal({ isOpen, onClose, onAddProduct }) {
         rating: 5.0,
         salesCount: 1
       },
-      images: [imagePreview],
+      images: [finalImage],
       description: description.trim() || 'Prenda en excelente estado, revisada minuciosamente.',
       measurements: 'Medidas estándar de fabricante',
       authenticityVerified: true,
@@ -48,6 +160,7 @@ export default function SellModal({ isOpen, onClose, onAddProduct }) {
     };
 
     onAddProduct(newProduct);
+    resetForm();
     onClose();
   };
 
@@ -71,7 +184,7 @@ export default function SellModal({ isOpen, onClose, onAddProduct }) {
             </p>
           </div>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -80,6 +193,132 @@ export default function SellModal({ isOpen, onClose, onAddProduct }) {
 
         <form onSubmit={handleSubmit} className="space-y-4 text-xs">
           
+          {/* Subir Imagen de la Prenda */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="block text-gray-300 font-semibold">
+                Fotografía de la prenda <span className="text-[#ff2a85]">*</span>
+              </label>
+              <button
+                type="button"
+                onClick={() => setUseUrlInput(!useUrlInput)}
+                className="text-[11px] text-[#ff8a00] hover:underline flex items-center gap-1 cursor-pointer"
+              >
+                <Link2 className="w-3 h-3" />
+                {useUrlInput ? 'Subir archivo de mi equipo' : 'Usar URL externa'}
+              </button>
+            </div>
+
+            {useUrlInput && (
+              <div className="flex gap-2 mb-2">
+                <input
+                  type="url"
+                  placeholder="https://ejemplo.com/foto-de-tu-ropa.jpg"
+                  value={imageUrl}
+                  onChange={(e) => setImageUrl(e.target.value)}
+                  className="flex-1 p-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-xs focus:outline-none focus:border-[#ff2a85]"
+                />
+                <button
+                  type="button"
+                  onClick={handleApplyUrl}
+                  className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium text-xs transition cursor-pointer"
+                >
+                  Cargar
+                </button>
+              </div>
+            )}
+
+            {/* Input nativo oculto */}
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleFileInputChange}
+              accept="image/*"
+              className="hidden"
+            />
+
+            {!imagePreview ? (
+              <div
+                onClick={() => fileInputRef.current?.click()}
+                onDragOver={handleDragOver}
+                onDragLeave={handleDragLeave}
+                onDrop={handleDrop}
+                className={`relative border-2 border-dashed rounded-2xl p-6 transition-all duration-200 cursor-pointer flex flex-col items-center justify-center text-center group ${
+                  isDragging
+                    ? 'border-[#ff2a85] bg-[#ff2a85]/10 scale-[1.01]'
+                    : 'border-white/15 bg-white/[0.02] hover:border-[#ff2a85]/60 hover:bg-white/[0.04]'
+                }`}
+              >
+                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#ff2a85] group-hover:scale-110 group-hover:bg-[#ff2a85]/10 transition-transform mb-3">
+                  <Upload className="w-6 h-6" />
+                </div>
+                <p className="text-white font-medium text-sm">
+                  Haz clic para subir o arrastra tu foto aquí
+                </p>
+                <p className="text-gray-400 text-[11px] mt-1">
+                  Formatos soportados: JPG, PNG, WEBP (hasta 10MB)
+                </p>
+                <div className="mt-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 text-[11px] text-gray-300 border border-white/10">
+                  <Camera className="w-3.5 h-3.5 text-[#ff8a00]" />
+                  <span>Se mostrará como foto principal en el catálogo</span>
+                </div>
+              </div>
+            ) : (
+              /* Vista previa de la imagen cargada */
+              <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#141420] p-3 flex items-center gap-4">
+                <div className="relative w-24 h-28 rounded-xl overflow-hidden bg-black flex-shrink-0 border border-white/10 shadow-md">
+                  <img
+                    src={imagePreview}
+                    alt="Vista previa de la prenda"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-1 right-1 bg-black/80 p-1 rounded-full text-emerald-400 shadow">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                  </div>
+                </div>
+
+                <div className="flex-1 min-w-0 space-y-1.5">
+                  <div className="flex items-center gap-1.5 text-emerald-400 font-semibold text-xs">
+                    <CheckCircle2 className="w-4 h-4" />
+                    <span>Foto lista para publicar</span>
+                  </div>
+                  <p className="text-gray-300 text-xs truncate font-mono bg-white/5 px-2 py-1 rounded-md border border-white/5">
+                    {fileName || 'Foto de prenda seleccionada'}
+                  </p>
+                  <p className="text-gray-400 text-[11px]">
+                    Esta foto se mostrará con alta calidad en el catálogo.
+                  </p>
+
+                  <div className="flex items-center gap-2 pt-1">
+                    <button
+                      type="button"
+                      onClick={() => fileInputRef.current?.click()}
+                      className="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-medium transition cursor-pointer flex items-center gap-1.5"
+                    >
+                      <Upload className="w-3 h-3" />
+                      Cambiar foto
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleRemoveImage}
+                      className="px-3 py-1.5 rounded-lg bg-red-500/15 hover:bg-red-500/25 text-red-300 text-[11px] font-medium transition cursor-pointer flex items-center gap-1.5"
+                    >
+                      <Trash2 className="w-3 h-3" />
+                      Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {uploadError && (
+              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-300 text-xs">
+                <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                <span>{uploadError}</span>
+              </div>
+            )}
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-gray-300 font-semibold mb-1">Título de la prenda *</label>
@@ -206,7 +445,7 @@ export default function SellModal({ isOpen, onClose, onAddProduct }) {
           <div className="flex items-center justify-end gap-3 pt-2">
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleClose}
               className="px-4 py-2.5 rounded-xl text-gray-400 hover:text-white hover:bg-white/5 cursor-pointer"
             >
               Cancelar
