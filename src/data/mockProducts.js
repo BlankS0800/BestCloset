@@ -100,7 +100,7 @@ export const INITIAL_PRODUCTS = [
     },
     images: [
       'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80'
+      //'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80'
     ],
     description: 'Estructura semidesestructurada en fina lana merino virgen. Líneas limpias y silueta recta contemporánea que eleva cualquier outfit diario o formal.',
     measurements: 'Hombros: 46cm, Pecho: 52cm, Largo: 76cm',
@@ -128,8 +128,8 @@ export const INITIAL_PRODUCTS = [
       salesCount: 89
     },
     images: [
-      'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
+      //'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=800&auto=format&fit=crop&q=80'
     ],
     description: 'Sudadera pesada de 480 GSM en algodón peruano pima peinado. Silueta boxy moderna sin cordones con hombros caídos y capucha envolvente.',
     measurements: 'Pecho: 64cm, Largo: 68cm, Hombro caído: 62cm',
@@ -245,7 +245,7 @@ export const INITIAL_PRODUCTS = [
     },
     images: [
       'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&auto=format&fit=crop&q=80'
+      //'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&auto=format&fit=crop&q=80'
     ],
     description: 'Cardigan de punto grueso trenzado con botones de cuerno natural. Calidez superior, fibra no irritante y estilo atemporal fácil de superponer.',
     measurements: 'Pecho: 56cm, Largo: 66cm, Manga raglán: 72cm',
@@ -274,7 +274,7 @@ export const INITIAL_PRODUCTS = [
     },
     images: [
       'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&auto=format&fit=crop&q=80'
+      //'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&auto=format&fit=crop&q=80'
     ],
     description: 'Pantalón de pinzas con cintura limpia y tiro medio-alto. Mezcla prémium de lino y algodón orgánico que resiste arrugas manteniendo frescura total.',
     measurements: 'Cintura: 80cm, Tiro: 31cm, Largo: 98cm',
@@ -302,7 +302,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 42
     },
     images: [
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80'
+      'https://plus.unsplash.com/premium_photo-1718913936342-eaafff98834b?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     ],
     description: 'El básico definitivo: cuello acanalado reforzado de 2.5cm que no se deforma tras los lavados, algodón pima de fibra extralarga y caída impecable.',
     measurements: 'Pecho: 54cm, Largo: 71cm',
@@ -332,8 +332,8 @@ export const INITIAL_PRODUCTS = [
       salesCount: 64
     },
     images: [
-      'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop&q=80'
+      'https://media.istockphoto.com/id/2168721713/es/foto/una-mujer-joven-saltando-alegremente-en-el-parque-en-un-hermoso-d%C3%ADa-soleado-lleno-de-calidez-y.webp?a=1&b=1&s=612x612&w=0&k=20&c=Gqg-zZaVPItXH7iUxWEd0jE-Zx1rWiEDxtwsSEsESZ0=',
+      //'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop&q=80'
     ],
     description: 'Conjunto deportivo confeccionado en punto tubular seamless sin costuras laterales. Efecto moldeador, soporte medio-alto y absorción antibacteriana.',
     measurements: 'Top Busto: 75-88cm, Calza Cintura: 62-76cm, Tiro: Alto',
@@ -361,7 +361,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 37
     },
     images: [
-      'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1611848544087-eb64a17984aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     ],
     description: 'Cortavientos técnico de 90g con tratamiento DWR repelente al agua. Plegable en su propio bolsillo con microperforaciones de ventilación en axilas y espalda.',
     measurements: 'Pecho: 59cm, Largo: 72cm, Manga: 66cm',
@@ -446,7 +446,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 29
     },
     images: [
-      'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1734766447004-4838c2d4a7ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     ],
     description: 'Prenda intermedia térmica con cremallera YKK invertida hasta el pecho y orificios para pulgares en los puños. Secado rápido y textura aterciopelada interior.',
     measurements: 'Pecho: 57cm, Largo: 70cm, Manga: 65cm',
@@ -474,7 +474,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 51
     },
     images: [
-      'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&auto=format&fit=crop&q=80'
+      'https://media.istockphoto.com/id/478252231/es/foto/pantalones-cortos-clipping-path.webp?a=1&b=1&s=612x612&w=0&k=20&c=hRM2SC5xtHnMigfYeS5gHXB2M_yGTWqQiId_hCjbJQ0='
     ],
     description: 'Pantalón corto de 5 pulgadas con malla de compresión integrada que previene rozaduras. Cintura elástica con cordón interior y bolsillo impermeable para llaves.',
     measurements: 'Cintura: 76-88cm, Largo: 41cm',
@@ -509,7 +509,7 @@ export const INITIAL_PRODUCTS = [
     authenticityVerified: true,
     inspectionCertificateId: 'BC-AUTH-2016'
   },
-  {
+  /*{
     id: 'bc-17',
     title: 'Mochila Técnica Impermeable Roll-Top 25L',
     brand: 'Kletter & Co.',
@@ -536,7 +536,7 @@ export const INITIAL_PRODUCTS = [
     measurements: 'Alto: 48cm (extensible a 60cm), Ancho: 30cm, Fondo: 15cm',
     authenticityVerified: true,
     inspectionCertificateId: 'BC-AUTH-2017'
-  },
+  },*/
 
   // --- SECCIÓN 2: TRAJES DE BAÑO & RESORT / PLAYA (bc-18 a bc-23) ---
   {
@@ -588,7 +588,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 77
     },
     images: [
-      'https://images.unsplash.com/photo-1582639510494-c80b5de9f148?w=800&auto=format&fit=crop&q=80'
+      'https://media.istockphoto.com/id/1192397722/es/foto/gafas-de-sol-y-trajes-de-ba%C3%B1o-azules-y-blancos-moda-de-playa-en-verano.webp?a=1&b=1&s=612x612&w=0&k=20&c=WHMammR3tatXuIOEXX3YjGw2eIbYDuxVEN9kzRHsQUU='
     ],
     description: 'Conjunto bikini de dos piezas con braguita de cintura ultra alta moldeadora y top con aros ocultos que realzan el escote de forma natural.',
     measurements: 'Top: Copa B (80-88cm), Braguita Cadera: 86-94cm',
@@ -616,7 +616,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 40
     },
     images: [
-      'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=800&auto=format&fit=crop&q=80'
+      'https://plus.unsplash.com/premium_photo-1789556270925-71ced9b5b417?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     ],
     description: 'Bañador masculino de corte medio (6") en microfibra hidrofóbica con tacto piel de melocotón. Forro interior de malla elástica suave y cordón con terminales grabados.',
     measurements: 'Cintura: 80-86cm, Largo exterior: 39cm',
@@ -815,7 +815,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 68
     },
     images: [
-      'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     ],
     description: 'El traje de etiqueta definitivo: lana fría Super 140s de Loro Piana, solapas en pico recubiertas en grogrén de seda y galón lateral a juego en pantalón.',
     measurements: 'Chaqueta Pecho: 56cm, Hombro: 48cm | Pantalón Cintura: 88cm, Largo: 106cm',
@@ -1718,7 +1718,7 @@ export const INITIAL_PRODUCTS = [
       salesCount: 68
     },
     images: [
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1664286074176-5206ee5dc878?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     ],
     description: 'Cinturón de 4cm de ancho en cuero vacuno plena flor con hebilla de fundición artística en latón macizo cepillado mate. Enmarca la cintura en vestidos o blazers.',
     measurements: 'Largo total: 100cm, Ancho: 4cm',
